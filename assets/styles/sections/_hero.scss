@@ -1,0 +1,60 @@
+section#hero {
+    color: white;
+    background: $dark-bg-color;
+
+    div#black-friday-info {
+        width: fit-content;
+        padding: 12px;
+        padding-left: 0;
+        margin-bottom: 24px;
+        border-radius: 32px;
+        font-size: 16px;
+        background: rgba(255, 255, 255, 0.1);
+
+        span {
+            padding: 12px;
+            margin-right: 16px;
+            border-radius: 32px;
+            font-weight: 500;
+            color: $dark-bg-color;
+            background: white;
+            letter-spacing: 0.1em;
+        }
+    }
+
+    h1 {
+        margin-right: 40%;
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 24px 60% 32px 0;
+        line-height: 27px;
+    }
+
+    button {
+        width: 202px;
+        font-size: 18px;
+        overflow: hidden;
+
+        span {
+            display: inline-block;
+            padding: 10px;
+            margin-left: 24px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: $button-bg;
+            background-color: white;
+        }
+    }
+
+    img {
+        width: 500px;
+        float: right;
+    }
+}

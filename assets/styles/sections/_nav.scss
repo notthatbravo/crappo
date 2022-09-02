@@ -1,0 +1,30 @@
+nav {
+	// padding: 60px 120px;
+	padding: 60px 50px;
+	color: white;
+	background: $dark-bg-color;
+
+	div.nav-links {
+		width: 60%;
+		height: 60px;
+		margin-top: -10px;
+		float: right;
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+
+		a {
+			flex: auto;
+			text-align: center;
+
+			button {
+				width: 130px;
+				height: 52px;
+			}
+		}
+
+		a:last-of-type {
+			border-left: 1px solid #f2f2f2;;
+		}
+	}
+}
