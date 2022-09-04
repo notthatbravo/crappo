@@ -44,6 +44,8 @@ section#features {
     }
 
     div.feature:nth-of-type(2) {
+        flex-flow: row-reverse;
+
         img {
             margin-left: -60px;
             margin-right: 100px;
@@ -98,5 +100,57 @@ section#features {
             color: $button-bg;
             background: white;
         }
+    }
+}
+
+
+// RESPONSIVENESS
+@media (max-width:1024px) {
+    section#features {
+        div.feature {
+            display: block;
+
+            img {
+                width: 140%;
+                margin: 48px 0 0;
+                margin-left: -50px;
+                object-position: center;
+            }
+        }
+
+        div.feature:nth-of-type(3) {
+            img {
+                margin-left: -80px;
+            }
+        }
+
+
+        div#start-mining {
+            display: block;
+            width: 100%;
+            
+            div#text {
+                margin: 0 0 48px;
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                margin: 0;
+                margin-bottom: 24px;
+            }
+
+            input:focus {
+                width: 110%;
+                margin-left: -5%;
+                margin-right: -5%;
+            }
+
+            button {
+                margin: 0;
+                width: 100%;
+            }
+        }
+
     }
 }

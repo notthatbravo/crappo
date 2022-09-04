@@ -53,6 +53,28 @@ footer {
                 font-size: 24px;
                 font-weight: 500;
             }
+
+            a {
+                margin: 0 12px;
+                
+                i {
+                    font-size: 36px;
+                    color: #E0E0E0;
+                    opacity: 0.5;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+
+            a:first-of-type {
+                margin-left: 0;
+            }
+
+            a:hover {
+                i {
+                    color: white;
+                    opacity: 1
+                }
+            }
         }
     }
 
@@ -78,6 +100,45 @@ footer {
             a {
                 display: inline-block;
                 margin: 0 16px;
+            }
+        }
+    }
+}
+
+// RESPONSIVENESS
+@media (max-width:1024px) {
+    footer {
+        // text-align: center;
+
+        div#flex-container {
+            display: block;
+
+            div {
+                margin: 0;
+                margin-bottom: 48px;
+            }
+
+            div:first-of-type {
+                text-align: left;
+            }
+        }
+
+        div#bottom-content {
+            display: block;
+
+            div {
+                margin: 0;
+                margin-bottom: 24px;
+                text-align: left;
+            }
+
+            div:last-of-type {
+                margin-bottom: 0;
+                text-align: left;
+
+                a:first-of-type {
+                    margin-left: 0;
+                }
             }
         }
     }

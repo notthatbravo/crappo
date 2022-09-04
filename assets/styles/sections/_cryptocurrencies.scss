@@ -48,34 +48,33 @@ section#cryptocurrencies {
             }
 
             button {
-                display: flex;
-                flex-flow: row;
-                align-items: center;
-                justify-content: center;
-                padding: 11px;
+                width: 64px;
+                // padding: 11px;
+                padding-top: 0;
                 margin-top: 25px;
                 background: none;
                 transition: 0.5s ease-in-out;
+                // overflow:hidden;
+                // border: 1px solid red;
 
                 span#text {
-                    flex: 0;
-                    overflow: hidden;
+                    display: inline-block;
+                    margin-left: -90px;
                     color: white;
                     transition: 1s ease-in-out;
                 }
 
                 span#arrow {
-                    flex: 0;
-                    display: inline-grid;
+                    display: inline-block;
                     place-items: center;
-                    width: 64px;
-                    height: 64px;
-                    border-radius: 50px;
+                    width: 32px;
+                    height: 32px;
                     border: 2px solid rgba(43, 7, 110, 0.2);
+                    border-radius: 50px;
                     font-size: 18px;
                     font-weight: 700;
                     color: $button-bg;
-                    transition: 1s ease-in-out;
+                    transition: 0.5s ease-in-out;
                 }
             }
         }
@@ -96,24 +95,48 @@ section#cryptocurrencies {
                 width: 205px;
                 height: 64px;
                 background: $button-bg;
+                transition: 0.5s ease-in-out;
 
                 span#text {
-                    flex: 80%;
+                    margin-left: 0;
+                    transition: 0.5s ease-in-out;
                 }
 
                 span#arrow {
-                    flex: 20%;
-                    display: inline-grid;
-                    place-items: center;
-                    width: 32px;
-                    height: 32px;
+                    // width: 32px;
+                    // height: 32px;
+                    margin-top: 0;
                     margin-left: 24px;
                     border-radius: 50px;
                     font-weight: 700;
                     text-align: center;
                     color: $button-bg;
                     background: white;
+                    transition: 0.5s ease-in-out;
                 }
+            }
+        }
+    }
+}
+
+
+// RESPONSIVENESS
+@media (max-width:1024px) {
+    section#cryptocurrencies {
+        h2 {
+            width: 100%;
+            margin-bottom: 0;
+            font-size: 32px;
+            line-height: 48px;
+            text-align: left;
+        }
+        div#flex-container {
+            display: block;
+
+            div.card {
+                width: 100%;
+                margin: 24px 0;
+                border: 1px solid $dark-bg-color;
             }
         }
     }

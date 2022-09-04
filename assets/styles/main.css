@@ -30,6 +30,11 @@ button:hover {
   transition: 0.5s ease-in-out;
 }
 
+::selection {
+  color: white;
+  background: black;
+}
+
 section {
   padding: 60px 50px;
   overflow: hidden;
@@ -61,9 +66,18 @@ nav div.nav-links a:last-of-type {
   border-left: 1px solid #f2f2f2;
 }
 
+@media (max-width: 1024px) {
+  nav div.nav-links {
+    display: none;
+  }
+}
 section#hero {
   color: white;
   background: #0D0D2B;
+}
+section#hero img {
+  width: 500px;
+  float: right;
 }
 section#hero div#black-friday-info {
   width: fit-content;
@@ -75,6 +89,8 @@ section#hero div#black-friday-info {
   background: rgba(255, 255, 255, 0.1);
 }
 section#hero div#black-friday-info span {
+  width: 32px;
+  height: 32px;
   padding: 12px;
   margin-right: 16px;
   border-radius: 32px;
@@ -98,11 +114,11 @@ section#hero button {
   overflow: hidden;
 }
 section#hero button span {
-  display: inline-block;
-  padding: 10px;
-  margin-left: 24px;
+  display: inline-grid;
+  place-items: center;
   width: 32px;
   height: 32px;
+  margin-left: 24px;
   border-radius: 50px;
   text-align: center;
   font-size: 12px;
@@ -110,17 +126,31 @@ section#hero button span {
   color: #3671E9;
   background-color: white;
 }
-section#hero img {
-  width: 500px;
-  float: right;
-}
 
+@media (max-width: 1024px) {
+  section#hero img {
+    float: none;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  section#hero h1 {
+    font-size: 60px;
+    margin-right: 0;
+  }
+  section#hero p {
+    margin-right: 0;
+  }
+  section#hero button {
+    width: 80%;
+  }
+}
 section#why-crappo {
   padding-bottom: 0;
   color: white;
   background-color: #0D0D2B;
 }
 section#why-crappo h2 {
+  margin-bottom: 24px;
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
@@ -156,9 +186,8 @@ section#why-crappo div#illustration-and-text img[alt=Illustration] {
   width: 500px;
   margin-right: 70px;
 }
-section#why-crappo div#illustration-and-text h2#section-header {
+section#why-crappo div#illustration-and-text h2 {
   margin-top: 160px;
-  margin-bottom: 24px;
 }
 section#why-crappo div#illustration-and-text p {
   color: #E0E0E0;
@@ -205,6 +234,12 @@ div#revenue-calculator input, div#revenue-calculator select {
 }
 div#revenue-calculator input {
   margin-left: 0;
+  -moz-appearance: textfield;
+}
+div#revenue-calculator input::-webkit-outer-spin-button,
+div#revenue-calculator input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 div#revenue-calculator select:focus {
   font-weight: bold;
@@ -243,6 +278,50 @@ div#calculator-results p {
   color: #828282;
 }
 
+@media (max-width: 1024px) {
+  section#why-crappo h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  section#why-crappo div#stats {
+    display: block;
+  }
+  section#why-crappo div#stats div {
+    margin-bottom: 24px;
+  }
+  section#why-crappo div#illustration-and-text img[alt=Illustration] {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  section#why-crappo div#illustration-and-text h2 {
+    margin-top: 48px;
+  }
+  section#why-crappo div#illustration-and-text p {
+    margin-right: 0;
+  }
+  section#why-crappo div#illustration-and-text button {
+    width: 80%;
+  }
+  section#why-crappo div#earn-checker {
+    margin-top: 100px;
+    text-align: left;
+  }
+  section#why-crappo div#revenue-calculator {
+    display: block;
+    width: 100%;
+  }
+  section#why-crappo div#revenue-calculator input, section#why-crappo div#revenue-calculator select, section#why-crappo div#revenue-calculator button {
+    margin: 20px 0;
+    width: 100%;
+  }
+  div#calculator-results {
+    width: 100%;
+    margin: 0 50px;
+    margin-right: 100px;
+    border: 1px solid red;
+  }
+}
 section#cryptocurrencies {
   margin-top: 40px;
   text-align: center;
@@ -287,33 +366,29 @@ section#cryptocurrencies div#flex-container div.card p {
   line-height: 28px;
 }
 section#cryptocurrencies div#flex-container div.card button {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  padding: 11px;
+  width: 64px;
+  padding-top: 0;
   margin-top: 25px;
   background: none;
   transition: 0.5s ease-in-out;
 }
 section#cryptocurrencies div#flex-container div.card button span#text {
-  flex: 0;
-  overflow: hidden;
+  display: inline-block;
+  margin-left: -90px;
   color: white;
   transition: 1s ease-in-out;
 }
 section#cryptocurrencies div#flex-container div.card button span#arrow {
-  flex: 0;
-  display: inline-grid;
+  display: inline-block;
   place-items: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 50px;
+  width: 32px;
+  height: 32px;
   border: 2px solid rgba(43, 7, 110, 0.2);
+  border-radius: 50px;
   font-size: 18px;
   font-weight: 700;
   color: #3671E9;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 section#cryptocurrencies div#flex-container div.card:first-of-type {
   margin-left: 0;
@@ -329,24 +404,40 @@ section#cryptocurrencies div#flex-container div.card:hover button {
   width: 205px;
   height: 64px;
   background: #3671E9;
+  transition: 0.5s ease-in-out;
 }
 section#cryptocurrencies div#flex-container div.card:hover button span#text {
-  flex: 80%;
+  margin-left: 0;
+  transition: 0.5s ease-in-out;
 }
 section#cryptocurrencies div#flex-container div.card:hover button span#arrow {
-  flex: 20%;
-  display: inline-grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
+  margin-top: 0;
   margin-left: 24px;
   border-radius: 50px;
   font-weight: 700;
   text-align: center;
   color: #3671E9;
   background: white;
+  transition: 0.5s ease-in-out;
 }
 
+@media (max-width: 1024px) {
+  section#cryptocurrencies h2 {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: left;
+  }
+  section#cryptocurrencies div#flex-container {
+    display: block;
+  }
+  section#cryptocurrencies div#flex-container div.card {
+    width: 100%;
+    margin: 24px 0;
+    border: 1px solid #0D0D2B;
+  }
+}
 section#features {
   color: white;
   background: #2B076E;
@@ -381,6 +472,9 @@ section#features div.feature div.text p {
 }
 section#features div.feature button {
   width: 160px;
+}
+section#features div.feature:nth-of-type(2) {
+  flex-flow: row-reverse;
 }
 section#features div.feature:nth-of-type(2) img {
   margin-left: -60px;
@@ -429,6 +523,42 @@ section#features div#start-mining button {
   background: white;
 }
 
+@media (max-width: 1024px) {
+  section#features div.feature {
+    display: block;
+  }
+  section#features div.feature img {
+    width: 140%;
+    margin: 48px 0 0;
+    margin-left: -50px;
+    object-position: center;
+  }
+  section#features div.feature:nth-of-type(3) img {
+    margin-left: -80px;
+  }
+  section#features div#start-mining {
+    display: block;
+    width: 100%;
+  }
+  section#features div#start-mining div#text {
+    margin: 0 0 48px;
+  }
+  section#features div#start-mining input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  section#features div#start-mining input:focus {
+    width: 110%;
+    margin-left: -5%;
+    margin-right: -5%;
+  }
+  section#features div#start-mining button {
+    margin: 0;
+    width: 100%;
+  }
+}
 footer {
   padding: 60px 50px;
   color: white;
@@ -475,6 +605,22 @@ footer div#flex-container div#payment h2 {
   font-size: 24px;
   font-weight: 500;
 }
+footer div#flex-container div#payment a {
+  margin: 0 12px;
+}
+footer div#flex-container div#payment a i {
+  font-size: 36px;
+  color: #E0E0E0;
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}
+footer div#flex-container div#payment a:first-of-type {
+  margin-left: 0;
+}
+footer div#flex-container div#payment a:hover i {
+  color: white;
+  opacity: 1;
+}
 footer div#bottom-content {
   display: flex;
   flex-flow: row;
@@ -495,6 +641,34 @@ footer div#bottom-content div:last-of-type {
 footer div#bottom-content div:last-of-type a {
   display: inline-block;
   margin: 0 16px;
+}
+
+@media (max-width: 1024px) {
+  footer div#flex-container {
+    display: block;
+  }
+  footer div#flex-container div {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+  footer div#flex-container div:first-of-type {
+    text-align: left;
+  }
+  footer div#bottom-content {
+    display: block;
+  }
+  footer div#bottom-content div {
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  footer div#bottom-content div:last-of-type {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  footer div#bottom-content div:last-of-type a:first-of-type {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

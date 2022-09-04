@@ -28,3 +28,13 @@ nav {
 		}
 	}
 }
+
+
+// RESPONSIVENESS
+@media (max-width:1024px) {
+	nav {
+		div.nav-links {
+			display: none;
+		}
+	}
+}

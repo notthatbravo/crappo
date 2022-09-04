@@ -4,6 +4,7 @@ section#why-crappo {
     background-color: $dark-bg-color;
 
     h2 {
+        margin-bottom: 24px;
         font-size: 40px;
         font-weight: 700;
         line-height: 60px;
@@ -48,9 +49,8 @@ section#why-crappo {
             margin-right: 70px;
         }
 
-        h2#section-header {
+        h2 {
             margin-top: 160px;
-            margin-bottom: 24px;
         }
 
         p {
@@ -107,7 +107,15 @@ div#revenue-calculator {
 
     input {
         margin-left: 0;
+        -moz-appearance: textfield;
     }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
 
     select:focus {
         font-weight: bold;
@@ -151,5 +159,66 @@ div#calculator-results {
     p {
         margin-top: 4px;
         color: #828282;
+    }
+}
+
+
+// RESPONSIVENESS
+@media (max-width: 1024px) {
+    section#why-crappo {
+        h2 {
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        div#stats {
+            display: block;
+
+            div {
+                margin-bottom: 24px;
+            }
+        }
+
+        div#illustration-and-text {
+            img[alt='Illustration'] {
+                float: none;
+                width: 100%;
+                margin: 0;
+            }
+
+            h2 {
+                margin-top: 48px;
+            }
+
+            p {
+                margin-right: 0;
+            }
+
+            button {
+                width: 80%;
+            }
+        }
+
+        div#earn-checker {
+            margin-top: 100px;
+            text-align: left;
+        }
+
+        div#revenue-calculator {
+            display: block;
+            width: 100%;
+
+            input,select,button {
+                margin: 20px 0;
+                width: 100%;
+            }
+        }
+    }
+
+    div#calculator-results {
+        width: 100%;
+        margin: 0 50px;
+        margin-right: 100px;
+        border: 1px solid red;
     }
 }

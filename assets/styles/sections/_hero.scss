@@ -2,6 +2,11 @@ section#hero {
     color: white;
     background: $dark-bg-color;
 
+    img {
+        width: 500px;
+        float: right;
+    }
+
     div#black-friday-info {
         width: fit-content;
         padding: 12px;
@@ -12,6 +17,8 @@ section#hero {
         background: rgba(255, 255, 255, 0.1);
 
         span {
+            width: 32px;
+            height: 32px;
             padding: 12px;
             margin-right: 16px;
             border-radius: 32px;
@@ -39,11 +46,11 @@ section#hero {
         overflow: hidden;
 
         span {
-            display: inline-block;
-            padding: 10px;
-            margin-left: 24px;
+            display: inline-grid;
+            place-items: center;
             width: 32px;
             height: 32px;
+            margin-left: 24px;
             border-radius: 50px;
             text-align: center;
             font-size: 12px;
@@ -53,8 +60,30 @@ section#hero {
         }
     }
 
-    img {
-        width: 500px;
-        float: right;
+    
+}
+
+
+// RESPONSIVENESS
+@media (max-width:1024px) {
+    section#hero {
+        img {
+            float: none;
+            width: 100%;
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-right: 0;
+        }
+
+        p {
+            margin-right: 0;
+        }
+
+        button {
+            width: 80%;
+        }
     }
 }
