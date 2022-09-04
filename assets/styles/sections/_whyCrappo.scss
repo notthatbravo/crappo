@@ -131,34 +131,37 @@ div#revenue-calculator {
     }
 }
 
+div#calc-results-container {
+    padding: 0 5%;
 
-div#calculator-results {
-    width: 59.1%;
-    padding: 24px 48px;
-    margin:  auto;
-    border-radius: 0 0 16px 16px;
-    background: #FFFFFF;
-    box-shadow: 2px 2px 2px 2px #ccc;
+    div#calculator-results {
+        width: 65%;
+        padding: 24px 48px;
+        margin:  auto;
+        border-radius: 0 0 16px 16px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 2px 2px #ccc;
 
-    h3 {
-        margin-bottom: 16px;
-        font-weight: 500;
-        color: $button-bg;
-    }
-
-    h2 {
-        font-size: 32px;
-        font-weight: 700;
-
-        span {
-            font-size: 100%;
+        h3 {
+            margin-bottom: 16px;
+            font-weight: 500;
             color: $button-bg;
         }
-    }
 
-    p {
-        margin-top: 4px;
-        color: #828282;
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+
+            span {
+                font-size: 100%;
+                color: $button-bg;
+            }
+        }
+
+        p {
+            margin-top: 4px;
+            color: #828282;
+        }
     }
 }
 
@@ -215,10 +218,9 @@ div#calculator-results {
         }
     }
 
-    div#calculator-results {
-        width: 100%;
-        margin: 0 50px;
-        margin-right: 100px;
-        border: 1px solid red;
+    div#calc-results-container {
+        div#calculator-results {
+            width: 100%;
+        }
     }
 }

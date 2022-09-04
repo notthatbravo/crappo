@@ -49,13 +49,10 @@ section#cryptocurrencies {
 
             button {
                 width: 64px;
-                // padding: 11px;
                 padding-top: 0;
                 margin-top: 25px;
                 background: none;
                 transition: 0.5s ease-in-out;
-                // overflow:hidden;
-                // border: 1px solid red;
 
                 span#text {
                     display: inline-block;
@@ -65,10 +62,10 @@ section#cryptocurrencies {
                 }
 
                 span#arrow {
-                    display: inline-block;
+                    display: inline-grid;
                     place-items: center;
-                    width: 32px;
-                    height: 32px;
+                    width: 64px;
+                    height: 64px;
                     border: 2px solid rgba(43, 7, 110, 0.2);
                     border-radius: 50px;
                     font-size: 18px;
@@ -103,8 +100,8 @@ section#cryptocurrencies {
                 }
 
                 span#arrow {
-                    // width: 32px;
-                    // height: 32px;
+                    width: 32px;
+                    height: 32px;
                     margin-top: 0;
                     margin-left: 24px;
                     border-radius: 50px;

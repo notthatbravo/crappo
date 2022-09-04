@@ -39,6 +39,8 @@ nav {
 // RESPONSIVENESS
 @media (max-width:1024px) {
 	nav {
+		padding: 5%;
+		
 		div.nav-links {
 			display: none;
 		}

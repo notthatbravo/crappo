@@ -67,6 +67,21 @@ section#hero {
 // RESPONSIVENESS
 @media (max-width:1024px) {
     section#hero {
+        div#black-friday-info {
+            width: 100%;
+            padding-left: 12px;
+            text-align: center;
+
+            span {
+                display: inline-grid;
+                place-items: center;
+                width: 100%;
+                padding: 0;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+        }
+
         img {
             float: none;
             width: 100%;
@@ -74,7 +89,7 @@ section#hero {
         }
 
         h1 {
-            font-size: 60px;
+            font-size: 48px;
             margin-right: 0;
         }
 

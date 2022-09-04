@@ -36,7 +36,9 @@ button:hover {
 }
 
 section {
-  padding: 60px 50px;
+  padding: 60px 0;
+  padding-left: 5%;
+  padding-right: 5%;
   overflow: hidden;
 }
 
@@ -72,6 +74,9 @@ nav div.nav-links a:last-of-type {
 }
 
 @media (max-width: 1024px) {
+  nav {
+    padding: 5%;
+  }
   nav div.nav-links {
     display: none;
   }
@@ -133,13 +138,26 @@ section#hero button span {
 }
 
 @media (max-width: 1024px) {
+  section#hero div#black-friday-info {
+    width: 100%;
+    padding-left: 12px;
+    text-align: center;
+  }
+  section#hero div#black-friday-info span {
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 12px;
+    text-align: center;
+  }
   section#hero img {
     float: none;
     width: 100%;
     margin-bottom: 48px;
   }
   section#hero h1 {
-    font-size: 60px;
+    font-size: 48px;
     margin-right: 0;
   }
   section#hero p {
@@ -257,28 +275,31 @@ div#revenue-calculator button:hover {
   border: 1px solid #0D0D2B;
 }
 
-div#calculator-results {
-  width: 59.1%;
+div#calc-results-container {
+  padding: 0 5%;
+}
+div#calc-results-container div#calculator-results {
+  width: 65%;
   padding: 24px 48px;
   margin: auto;
   border-radius: 0 0 16px 16px;
   background: #FFFFFF;
   box-shadow: 2px 2px 2px 2px #ccc;
 }
-div#calculator-results h3 {
+div#calc-results-container div#calculator-results h3 {
   margin-bottom: 16px;
   font-weight: 500;
   color: #3671E9;
 }
-div#calculator-results h2 {
+div#calc-results-container div#calculator-results h2 {
   font-size: 32px;
   font-weight: 700;
 }
-div#calculator-results h2 span {
+div#calc-results-container div#calculator-results h2 span {
   font-size: 100%;
   color: #3671E9;
 }
-div#calculator-results p {
+div#calc-results-container div#calculator-results p {
   margin-top: 4px;
   color: #828282;
 }
@@ -320,11 +341,8 @@ div#calculator-results p {
     margin: 20px 0;
     width: 100%;
   }
-  div#calculator-results {
+  div#calc-results-container div#calculator-results {
     width: 100%;
-    margin: 0 50px;
-    margin-right: 100px;
-    border: 1px solid red;
   }
 }
 section#cryptocurrencies {
@@ -384,10 +402,10 @@ section#cryptocurrencies div#flex-container div.card button span#text {
   transition: 1s ease-in-out;
 }
 section#cryptocurrencies div#flex-container div.card button span#arrow {
-  display: inline-block;
+  display: inline-grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   border: 2px solid rgba(43, 7, 110, 0.2);
   border-radius: 50px;
   font-size: 18px;
@@ -416,6 +434,8 @@ section#cryptocurrencies div#flex-container div.card:hover button span#text {
   transition: 0.5s ease-in-out;
 }
 section#cryptocurrencies div#flex-container div.card:hover button span#arrow {
+  width: 32px;
+  height: 32px;
   margin-top: 0;
   margin-left: 24px;
   border-radius: 50px;
@@ -529,6 +549,10 @@ section#features div#start-mining button {
 }
 
 @media (max-width: 1024px) {
+  section#features h2 {
+    font-size: 32px;
+    text-align: left;
+  }
   section#features div.feature {
     display: block;
   }
@@ -537,6 +561,9 @@ section#features div#start-mining button {
     margin: 48px 0 0;
     margin-left: -50px;
     object-position: center;
+  }
+  section#features div.feature div.text h3 {
+    font-size: 28px;
   }
   section#features div.feature:nth-of-type(3) img {
     margin-left: -80px;

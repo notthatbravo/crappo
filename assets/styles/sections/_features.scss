@@ -107,6 +107,11 @@ section#features {
 // RESPONSIVENESS
 @media (max-width:1024px) {
     section#features {
+        h2 {
+            font-size: 32px;
+            text-align: left;
+        }
+
         div.feature {
             display: block;
 
@@ -115,6 +120,12 @@ section#features {
                 margin: 48px 0 0;
                 margin-left: -50px;
                 object-position: center;
+            }
+
+            div.text {
+                h3 {
+                    font-size: 28px;
+                }
             }
         }
 
