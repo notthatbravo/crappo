@@ -57,10 +57,15 @@ nav div.nav-links {
 nav div.nav-links a {
   flex: auto;
   text-align: center;
+  transition: 0.5s ease-in-out;
 }
 nav div.nav-links a button {
   width: 130px;
   height: 52px;
+  color: white;
+}
+nav div.nav-links a:hover {
+  color: #3671E9;
 }
 nav div.nav-links a:last-of-type {
   border-left: 1px solid #f2f2f2;

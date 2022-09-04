@@ -16,11 +16,17 @@ nav {
 		a {
 			flex: auto;
 			text-align: center;
+			transition: 0.5s ease-in-out;
 
 			button {
 				width: 130px;
 				height: 52px;
+				color: white;
 			}
+		}
+
+		a:hover {
+			color: $button-bg;
 		}
 
 		a:last-of-type {
