@@ -47,14 +47,23 @@ nav {
   color: white;
   background: #0D0D2B;
 }
+nav span#menu-icon {
+  display: none;
+  float: right;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+nav span#menu-icon i {
+  font-size: 24px;
+}
 nav div.nav-links {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
   width: 60%;
   height: 60px;
   margin-top: -10px;
   float: right;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
 }
 nav div.nav-links a {
   flex: auto;
@@ -77,8 +86,41 @@ nav div.nav-links a:last-of-type {
   nav {
     padding: 5%;
   }
+  nav span#menu-icon {
+    margin-top: 2%;
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+  }
   nav div.nav-links {
-    display: none;
+    display: block;
+    float: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    padding-top: 10vh;
+    background: #2B076E;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  nav div.nav-links a {
+    display: block;
+    margin: 24px 0;
+  }
+  nav div.nav-links a button {
+    width: 100%;
+  }
+  nav div.nav-links a:last-of-type {
+    border: 0;
+  }
+  nav div.nav-links.visible {
+    width: 40vw;
+    padding: 10vh 24px 0;
   }
 }
 section#hero {

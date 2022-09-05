@@ -29,20 +29,22 @@
 	<nav>
 		<a href="."><img src="assets/img/logo.png" alt="logo"></a>
 
-		<div class="nav-links">
-			<a href="#">Products</a>
-			<a href="#">Features</a>
-			<a href="#">About</a>
-			<a href="#">Contact</a>
-			<a href="#">Login</a>
+		<span id="menu-icon"><i class="fa-solid fa-bars"></i></span>
 
-			<a href="#"><button>Register</button></a>
+		<div class="nav-links">
+			<a href="#" title="Products">Products</a>
+			<a href="#" title="Features">Features</a>
+			<a href="#" title="About Us">About</a>
+			<a href="#" title="Contact Us">Contact</a>
+			<a href="#" title="Login to your Account">Login</a>
+
+			<a href="#" title="Create an Account"><button>Register</button></a>
 		</div>
 	</nav>
 
 	<!-- HERO SECTION -->
 	<section id="hero">
-		<img src="assets/img/hero-illustration.svg" alt="Illustration" srcset="">
+		<img src="assets/img/hero-illustration.svg" alt="Illustration" srcset="" data-aos="fade-up">
 
 		<div id="black-friday-info">
 			<span id="save-percentage">75% SAVE</span>
@@ -63,7 +65,7 @@
 	<!-- WHY CRAPPO -->
 	<section id="why-crappo">
 		<div id="stats">
-			<div class="stat-container">
+			<div class="stat-container" data-aos="fade-up">
 				<img src="assets/img/icon-barchart.svg" alt="Icon" srcset="">
 
 				<div class="text">
@@ -72,7 +74,7 @@
 				</div>
 			</div>
 
-			<div class="stat-container">
+			<div class="stat-container" data-aos="fade-up">
 				<img src="assets/img/icon-person.svg" alt="Icon" srcset="">
 
 				<div class="text">
@@ -81,7 +83,7 @@
 				</div>
 			</div>
 
-			<div class="stat-container">
+			<div class="stat-container" data-aos="fade-up">
 				<img src="assets/img/icon-earth.svg" alt="Icon" srcset="">
 
 				<div class="text">
@@ -297,6 +299,7 @@
 		</div>
 	</footer>
 
+	<script src="assets/scripts/nav.js"></script>
 	<script>AOS.init();</script>
 </body>
 </html>
