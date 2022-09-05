@@ -70,7 +70,7 @@ nav {
 			top: 0;
 			width: 0;
 			height: 100vh;
-			padding-top: 10vh;
+			padding-top: 20vh;
 			background: $light-bg-color;
 			text-align: center;
 			transition: 0.5s ease-in-out;
@@ -90,8 +90,8 @@ nav {
 		}
 
 		div.nav-links.visible {
-			width: 40vw;
-			padding: 10vh 24px 0;
+			width: 70vw;
+			padding: 20vh 24px 0;
 		}
 	}
 }
